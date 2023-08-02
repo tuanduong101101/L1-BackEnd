@@ -22,9 +22,12 @@ public interface EmployeeService {
     Employee addEmployee(EmployeeDTO employeeDTO ) ;
     List<Employee> getListEmployee();
     Employee findEmployee(EmployeeSearchDTO employeeSearchDTO );
+    // xóa nhân viên
     void deleteEmployee(Long id);
     void getFile(HttpServletResponse response) throws IOException;
+    // cập nhật thông tin nhân viên
     Employee updateEmployee(EmployeeUpdateDto employeeUpdateDto, Long employeeId);
+    // lấy ra danh sách nhân viên bao gồm bằng
     List<Employee1DTO> getEmployeeContainDegree();
     // validate listEmloyee imported from user and response error if have
     ValidateErrorResponse importListEmployee(MultipartFile multipartFile) throws IOException, InvalidFormatException;
