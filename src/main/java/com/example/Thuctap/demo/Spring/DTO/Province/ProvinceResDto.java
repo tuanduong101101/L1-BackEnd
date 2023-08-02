@@ -9,6 +9,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+// class province trả về
 public class ProvinceResDto {
     private Long provinceId ;
     private String provinceName;
