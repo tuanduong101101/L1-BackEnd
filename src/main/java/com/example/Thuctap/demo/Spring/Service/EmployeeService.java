@@ -19,6 +19,7 @@ import java.util.List;
 
 @Service
 public interface EmployeeService {
+    // thêm nhân viên
     Employee addEmployee(EmployeeDTO employeeDTO ) ;
     List<Employee> getListEmployee();
     Employee findEmployee(EmployeeSearchDTO employeeSearchDTO );
